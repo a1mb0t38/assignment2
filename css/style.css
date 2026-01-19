@@ -29,3 +29,94 @@
   border: none;
   border-radius: 10000px;
 }
+
+.grid-card{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card-1{
+  max-width: 380px;
+  height: 480px;
+  grid-row: span 2;
+  background-color: rgba(53, 17, 101, 0.4);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items:start;
+  justify-content: center;
+  padding: 40px;
+}
+.card-2{
+  max-width: 790px;
+  height: 225px;
+  grid-column: span 2;
+  background-color: rgba(53, 17, 101, 0.4);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items:start;
+  justify-content: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.card-3{
+  max-width: 790px;
+  height: 225px;
+  grid-column: span 2;
+  background-color: rgba(53, 17, 101, 0.4);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items:start;
+  justify-content: center;
+  padding-left: 40px;
+  padding-right: 40px;
+
+}
+
+.card-4{
+  max-width: 790px;
+  height: 225px;
+  grid-column: span 2;
+  background-color: rgba(53, 17, 101, 0.4);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items:start;
+  justify-content: center;
+  padding: 40px;
+}
+
+.card-5{
+  max-width: 380px;
+  height: 225px;
+  background-color: rgba(53, 17, 101, 0.4);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items:start;
+  justify-content: center;
+  padding: 40px;
+}
+
+@media screen and (max-width: 640px) {
+  .grid-card {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4,
+  .card-5 {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+    max-width: 100%;
+    height: auto;
+  }
+}
